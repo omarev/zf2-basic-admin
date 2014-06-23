@@ -1,0 +1,25 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <?php echo $this->headTitle('ZF2 Basic Admin'); ?>
+
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headScript(); ?>
+
+    </head>
+    <body>
+        <h4>ZF2 Basic Admin</h4>
+        <ul>
+            <li><a href="<?php echo $this->url('home') ?>">Home</a></li>
+            <li><a href="<?php echo $this->url('admin') ?>">Admin</a></li>
+        </ul>
+            
+        <div>
+            <?php echo $this->content; ?>
+        </div>
+        
+        <?php echo $this->inlineScript() ?>
+        
+    </body>
+</html>
